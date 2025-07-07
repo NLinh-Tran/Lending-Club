@@ -75,16 +75,16 @@ This portfolio analysis traces Lending Club’s journey through its startup, hyp
 </p>
 
 * **Early stage (2007–2011)**
-  * LC’s portfolio was dominated by Grade A and B loans, catering to prime borrowers and minimizing defaults
+  * LC’s portfolio was dominated by Grade A and B loans, catering to prime borrowers and minimizing charge-offs
 * **Hypergrowth (2012–2015)**
-  * LC shifted aggressively into riskier D, E, F, and G grades, which offered higher yields to investors but carried much greater default risk
+  * LC shifted aggressively into riskier D, E, F, and G grades, which offered higher yields to investors but carried much greater charge-off risk
   * This shift coincided with a drop in FICO scores, higher charge-offs, and ballooning issuance
 *	**After 2016**
   * Issuance of F and G grades nearly disappeared, while safer A and B grades regained prominence
-  * Despite the pullback from high-risk loans, investors remained engaged because riskier loans in earlier years offered commensurately higher interest rates, partially compensating for higher defaults .
+  * Despite the pullback from high-risk loans, investors remained engaged because riskier loans in earlier years offered commensurately higher interest rates, partially compensating for higher charge-offs.
 
 ### Summary:
-From 2007 to 2018, Lending Club evolved from a cautious startup into a hypergrowth leader, then faced a crisis that forced a reset. After years of aggressive expansion and rising defaults, the 2016 scandal marked a turning point. By tightening standards and improving portfolio quality, the company stabilized loan performance and regained momentum, closing the decade stronger and more disciplined.
+From 2007 to 2018, Lending Club evolved from a cautious startup into a hypergrowth leader, then faced a crisis that forced a reset. After years of aggressive expansion and rising charge-offs, the 2016 scandal marked a turning point. By tightening standards and improving portfolio quality, the company stabilized loan performance and regained momentum, closing the decade stronger and more disciplined.
 
 ## MODELS & EVALUATIONS
 
@@ -92,14 +92,13 @@ To complement the portfolio analysis with actionable decision tools, I developed
 
 ### 1.	Loan Approval Model - [View notebook](Lending_Club_Loan_Approval_Model.ipynb)
 
-[View notebook](Lending_Club_Loan_Approval_Model.ipynb)
 <p align="center">
   <img src="Visuals/Loan%20Approval%20Model.png" width="1000">
 </p>
 
 * Model: Logistic Regression
 *	Serves as a pre-screener to expand borrower approvals while safeguarding portfolio health
-*	Quantifies how much risk is added at each approval threshold, enabling Lending Club to adjust its growth appetite while keeping defaults in check
+*	Quantifies how much risk is added at each approval threshold, enabling Lending Club to adjust its growth appetite while keeping charge-offs in check
 *	Key insight: Raising approval thresholds too aggressively shrinks opportunities far more than it reduces risk, highlighting the cost of being overly cautious
 *	Performance: AUC ≈ 0.86
 
@@ -110,7 +109,7 @@ To complement the portfolio analysis with actionable decision tools, I developed
 </p>
 
 * Model: XGBoost
-*	Protects the portfolio’s bottom line by identifying borrowers most likely to charge-off at origination
+*	Protects the portfolio’s bottom line by identifying borrowers most likely to charge off at origination
 *	Performance: AUC ≈ 0.72
 *	Feature importance analysis: Revealed the key drivers of charge-off risk: high interest rates, elevated debt-to-income ratios, low credit scores, and heavy revolving credit utilization
 
