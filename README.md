@@ -2,7 +2,7 @@
 
 Welcome to my Project! 
 
-This is a deep dive into Lending Club's data to uncover patterns, challenges, and opportunities that can inform future decision-making. As a sophomore majoring in Business Analytics and Finance, I built this project to apply my curiosity in a real-world setting - bridging analytical thinking with business impact.
+This is a deep dive into Lending Club's data to uncover patterns, challenges, and opportunities that can inform future decision-making. As a sophomore majoring in Business Analytics and Finance, I developed this project to apply my curiosity in a real-world setting, bridging analytical thinking with business impact.
 
 This analysis uses LendingClub loan-level data publicly available on Kaggle ([wordsforthewise, 2021](https://www.kaggle.com/datasets/wordsforthewise/lending-club)).
 
